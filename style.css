@@ -16,22 +16,32 @@ body {
 }
 
 div#banner {
+    background: url('imagens/natureza.jpeg');
+    background-size: cover;
     background-color: #004d00;
+    color: #333333;
+    width: 100%;
     padding: 20px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     padding: 10px;
 }
 
 p {
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 10px;
 }
 
 section#contact {
-    padding: 10px;
+    padding: 20px;
+    width: 100%;
+    background-color: #E0F7FA;
+    color: #333333;
 }
 
 div#contact-container {
@@ -62,8 +72,75 @@ div.contact-item {
     border-radius: 50%;
 }
 
+section#products {
+    padding: 20px;
+    width: 100%;
+    background-color: #EAEAEA;
+    color: #333333;
+}
+
+div#product-card-container {
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+div.product-card {
+    background-color: #FAF4D3;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid #000000;
+    width: 300px;
+    padding: 40px 10px 10px 10px;
+    position: relative;
+}
+
+.product-image {margin: auto;}
+
+div.product-card p {text-align: center;}
+
+.best-seller {
+    background-color: #FF7F50;
+    position: absolute;
+    top: -10px;
+    padding: 5px 10px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid #B71C1C;
+}
+
+.promotion {
+    background-color: #FFB74D;
+    position: absolute;
+    top: -10px;
+    padding: 5px 10px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid #F57C00;
+}
+
+.last-units {
+    background-color: #4FC3F7;
+    position: absolute;
+    top: -10px;
+    padding: 5px 10px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid #0288D1;
+}
+
+
 footer {
     background-color: #333333;
+    color: #E0E0E0;
     padding: 20px;
     text-align: center;
     width: 100%;
