@@ -16,10 +16,8 @@ body {
 }
 
 div#banner {
-    background: url('imagens/natureza.jpeg');
-    background-size: cover;
     background-color: #004d00;
-    color: #333333;
+    color: #000000;
     width: 100%;
     padding: 20px;
     position: relative;
@@ -35,6 +33,31 @@ h2 {
 p {
     font-size: 1.25rem;
     padding: 10px;
+}
+
+.banner-content {
+    background-image: url('imagens/natureza.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.banner-content h2 {
+    font-size: 48px;
+    margin: 0;
+    color: #006400;
+}
+
+.banner-content p {
+    font-size: 24px;
+    margin: 10px 0 0;
+    color: #32CD32;
 }
 
 section#contact {
@@ -56,10 +79,10 @@ div.contact-item {
     gap: 10px;
 }
 
-#whatsapp {
+#phone {
     font-size: 1.5rem;
     color: #ffffff;
-    background-color: #008000;
+    background-color: #1E90FF;
     padding: 10px;
     border-radius: 50%;
 }
@@ -67,9 +90,31 @@ div.contact-item {
 #email {
     font-size: 1.5rem;
     color: #ffffff;
-    background-color: #1E90FF;
+    background-color: #D32F2F;
     padding: 10px;
     border-radius: 50%;
+}
+
+#alert {
+    background-color: #FFF9C4;
+    padding: 15px;
+    border: 1px solid #FBC02D;
+    border-radius: 5px;
+}
+
+#alert h3 {
+    color: #F57C00;
+    font-size: 32px;
+    padding-left: 10px;
+}
+
+#alert p {
+    color: #333;
+
+}
+
+#alert strong {
+    color: #F57C00;
 }
 
 section#products {
@@ -87,56 +132,106 @@ div#product-card-container {
 }
 
 div.product-card {
-    background-color: #FAF4D3;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    border: 1px solid #000000;
-    width: 300px;
-    padding: 40px 10px 10px 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
     position: relative;
+    height: 500px;
 }
 
-.product-image {margin: auto;}
+.product-image {
+    max-width: 100%;
+    border-radius: 5px;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+}
 
-div.product-card p {text-align: center;}
+.product-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #006400;
+}
 
-.best-seller {
-    background-color: #FF7F50;
+.product-card p {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.best-seller,
+.promotion,
+.last-units {
     position: absolute;
     top: -10px;
+    left: 10px;
     padding: 5px 10px;
     color: #ffffff;
     font-weight: bold;
     border-radius: 3px;
-    padding: 10px;
+}
+
+.best-seller {
+    background-color: #FF7F50;
     border: 1px solid #B71C1C;
 }
 
 .promotion {
     background-color: #FFB74D;
-    position: absolute;
-    top: -10px;
-    padding: 5px 10px;
-    color: #ffffff;
-    font-weight: bold;
-    border-radius: 3px;
-    padding: 10px;
     border: 1px solid #F57C00;
 }
 
 .last-units {
     background-color: #4FC3F7;
-    position: absolute;
-    top: -10px;
-    padding: 5px 10px;
-    color: #ffffff;
-    font-weight: bold;
-    border-radius: 3px;
-    padding: 10px;
     border: 1px solid #0288D1;
 }
 
+.product-size {
+    font-size: 0.875rem;
+    color: #ffffff;
+    background-color: #D32F2F;
+    padding: 5px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#final-sentence {
+    background: url('imagens/ortopedia.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    animation: fadeIn 1.5s ease-in-out;
+    background-color: #E0E0E0;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+    color: #333333;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7)
+}
+
+#final-sentence p {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 footer {
     background-color: #333333;
